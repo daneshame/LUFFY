@@ -64,15 +64,6 @@ LUFFY/
 - [x] **luffy/deepscaler/utils.py:53** - Implement exponential backoff retry logic for rate limits
 - [x] **luffy/deepscaler/utils.py:65** - Add comprehensive error handling for different API errors
 - [x] **luffy/deepscaler/utils.py:75** - Implement response parsing and validation
-
-
-
-
-
-
-
-
-
 - [ ] **luffy/deepscaler/utils.py:107** - Implement Vertex AI initialization and authentication
 - [ ] **luffy/deepscaler/utils.py:108** - Configure safety settings for content generation
 - [ ] **luffy/deepscaler/utils.py:109** - Set up GenerativeModel with proper system instructions
@@ -81,11 +72,6 @@ LUFFY/
 - [ ] **luffy/deepscaler/utils.py:112** - Handle rate limiting and quota management
 - [ ] **luffy/deepscaler/utils.py:113** - Implement response validation and text extraction
 - [ ] **luffy/deepscaler/utils.py:114** - Add support for different generation configurations
-- [ ] **luffy/verl/verl/protocol.py:114** - Optimize memory usage during tensor reshaping
-- [ ] **luffy/verl/verl/protocol.py:115** - Add support for different tensor types and shapes
-- [x] **luffy/verl/verl/protocol.py:117** - Implement batch dimension folding for efficient processing
-- [x] **luffy/verl/verl/protocol.py:118** - Add validation for batch size compatibility
-- [x] **luffy/verl/verl/protocol.py:123** - Handle edge cases where batch_size is not divisible by new_batch_size
 - [ ] **luffy/test.py:1590** - add smaller page sizes when https://github.com/Dao-AILab/flash-attention/pull/824 is merged
 - [ ] **luffy/verl/examples/split_placement/split_monkey_patch.py:141** - make a canonical logger that supports various backend
 - [ ] **luffy/verl/tests/e2e/check_results.py:21** - this function needs error handling
@@ -124,16 +110,16 @@ LUFFY/
 - [ ] **luffy/verl/verl/models/llama/megatron/modeling_llama_megatron.py:588** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
 - [ ] **luffy/verl/verl/models/registry.py:21** - (sgm): HF may supported more than listed here, we should add more after testing
 - [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
-
-
-
-
-
+- [ ] **luffy/verl/verl/protocol.py:114** - Optimize memory usage during tensor reshaping
+- [ ] **luffy/verl/verl/protocol.py:115** - Add support for different tensor types and shapes
+- [x] **luffy/verl/verl/protocol.py:117** - Implement batch dimension folding for efficient processing
+- [x] **luffy/verl/verl/protocol.py:118** - Add validation for batch size compatibility
+- [x] **luffy/verl/verl/protocol.py:123** - Handle edge cases where batch_size is not divisible by new_batch_size
 - [x] **luffy/verl/verl/protocol.py:132** - Implement batch dimension unfolding functionality
-- [x] **luffy/verl/verl/protocol.py:140** - Add support for variable batch dimensions
 - [ ] **luffy/verl/verl/protocol.py:136** - Optimize tensor view operations for performance
-- [x] **luffy/verl/verl/protocol.py:148** - Handle non-tensor batch data reshaping properly
 - [ ] **luffy/verl/verl/protocol.py:137** - Add error handling for invalid batch dimensions
+- [x] **luffy/verl/verl/protocol.py:140** - Add support for variable batch dimensions
+- [x] **luffy/verl/verl/protocol.py:148** - Handle non-tensor batch data reshaping properly
 - [ ] **luffy/verl/verl/protocol.py:169** - (zhangchi.usc1992) add consistency check
 - [ ] **luffy/verl/verl/protocol.py:265** - we can actually lift this restriction if needed
 - [ ] **luffy/verl/verl/protocol.py:351** - (zhangchi.usc1992) whether to copy
